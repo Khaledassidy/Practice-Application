@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/costume_card_elevation"
+    android:padding="@dimen/paddingcostumecard"
+    android:layout_margin="@dimen/Card_costume_margin"
+    app:cardCornerRadius="@dimen/costume_card_corner_redius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/costume_card_imageview"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/costume_image_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/costume_card_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/car"
+            android:layout_marginHorizontal="3dp"
+            android:text="@string/model_car"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizemodel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/costume_card_imageview" />
+
+        <TextView
+            android:id="@+id/costume_card_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/color"
+            android:drawablePadding="2dp"
+            android:text="@string/model_car"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="3dp"
+            android:textSize="@dimen/textsize_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/costume_card_dpl"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/costume_card_model" />
+
+        <TextView
+            android:id="@+id/costume_card_dpl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/local_gas_station"
+            android:drawablePadding="2dp"
+            android:text="@string/dpl_car"
+            android:layout_marginHorizontal="3dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_dpl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/costume_card_color"
+            app:layout_constraintTop_toBottomOf="@id/costume_card_model" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_details"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_details"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <ImageView
+                android:id="@+id/image_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                android:backgroundTint="@color/PRIMARYCOLOR"
+                app:layout_collapseParallaxMultiplier="0.5"
+                android:fitsSystemWindows="true">
+
+            </ImageView>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_detials"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizantal_margin"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/PRIMARYTEXT"
+                app:errorTextColor="?colorAccent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditText_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/car"
+                    android:drawablePadding="@dimen/drawblepadding"
+                    android:layout_weight="1"
+                    android:tooltipText="Name"
+                    android:hint="@string/model_car">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/PRIMARYTEXT"
+                app:errorTextColor="?colorAccent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditText_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/color"
+                    android:drawablePadding="@dimen/drawblepadding"
+                    android:layout_weight="1"
+                    android:hint="@string/color_car"
+                    android:tooltipText="Name">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout_dpl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/PRIMARYTEXT"
+                app:errorTextColor="?colorAccent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditText_dpl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/local_gas_station"
+                    android:drawablePadding="@dimen/drawblepadding"
+                    android:layout_weight="1"
+                    android:tooltipText="Name"
+                    android:hint="@string/dpl_car">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/PRIMARYTEXT"
+                app:errorTextColor="?colorAccent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditText_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/description"
+                    android:drawablePadding="@dimen/drawblepadding"
+                    android:layout_weight="1"
+                    android:tooltipText="Name"
+                    android:hint="@string/description_car">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

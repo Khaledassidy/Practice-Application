@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="activity_horizantal_margin">16dp</dimen>
+    <dimen name="drawblepadding">1dp</dimen>
+    <dimen name="costume_card_elevation">5dp</dimen>
+    <dimen name="costume_card_corner_redius">10dp</dimen>
+    <dimen name="costume_image_height">96dp</dimen>
+    <dimen name="textsizemodel">18sp</dimen>
+    <dimen name="textsize_dpl">16sp</dimen>
+    <dimen name="textsize_color">16sp</dimen>
+    <dimen name="padding_views_costume">10dp</dimen>
+    <dimen name="Card_costume_margin">8dp</dimen>
+    <dimen name="paddingcostumecard">5dp</dimen>
+</resources>

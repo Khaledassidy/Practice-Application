@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PracticeApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/PRIMARYCOLOR</item>
+        <item name="colorPrimaryDark">@color/DARKPRIMARYCOLOR</item>
+        <item name="colorAccent">@color/ACCENTCOLOR</item>
+    </style>
+
+    <style name="Theme.PracticeApplication" parent="Base.Theme.PracticeApplication" />
+</resources>

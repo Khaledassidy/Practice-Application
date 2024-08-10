@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Practice Application</string>
+    <string name="model_car">Model car</string>
+    <string name="color_car">Color car</string>
+    <string name="dpl_car">dpl car</string>
+    <string name="description_car">description car</string>
+</resources>
